@@ -23,6 +23,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_email_form_layout"
+            app:hintEnabled="false"
             style="@style/Theme.AtacadaoISV.TextFormInputLayout">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -38,6 +39,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_password_form_layout"
             style="@style/Theme.AtacadaoISV.TextFormInputLayout"
+            app:hintEnabled="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/login_email_form_layout">
@@ -52,12 +54,11 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
+        <com.devdroid.atacadao_isv.login.view.LoadingButton
             android:id="@+id/login_enter_btn"
-            style="@style/Theme.AtacadaoISV.BTN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="true"
+            android:enabled="false"
             android:text="@string/login_enter_btn" />
 
         <TextView
